@@ -1,0 +1,21 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+
+sourceCompatibility = 1.8
+
+repositories {	
+	maven {
+		name 'IBO_Allowed_Repos'
+		url "http://nexusARIS.eur.ad.sag:8081/nexus/content/groups/IBO_Allowed_Repos"
+	}
+}
+
+sourceSets {
+	main {
+		java {
+			srcDir 'src'
+		}
+	}	
+}
+dependencies {
+}
